@@ -777,7 +777,7 @@
       .call(tron.led);
   ```
 
-  **[[⬆]](#TOC)**  
+  **[[⬆]](#TOC)**
 
 ## <a name='leading-commas'>Leading Commas</a>
 
@@ -929,12 +929,12 @@
     }
     ```
 
-  - Use `lowercase_separated_by_underscores` when naming objects, functions, and instances
+  - Use camelCase when naming objects, functions, and instances
 
     ```javascript
     // bad
     var OBJEcttsssss = {};
-    var thisIsMyObject = {};
+    var this_is_my_object = {};
     var this-is-my-object = {};
     function c() {};
     var u = new user({
@@ -942,8 +942,8 @@
     });
 
     // good
-    var this_is_my_object = {};
-    function this_is_my_function() {};
+    var thisIsMyObject = {};
+    function thisIsMyObject() {};
     var user = new User({
       name: 'Bob Parr'
     });
@@ -977,7 +977,7 @@
     // bad
     this.__firstName__ = 'Panda';
     this.firstName_ = 'Panda';
-    
+
     // good
     this._firstName = 'Panda';
     ```
